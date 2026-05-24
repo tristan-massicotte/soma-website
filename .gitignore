@@ -1,0 +1,12 @@
+# Internal dev guide — not part of the website
+Claude.md
+
+# macOS
+.DS_Store
+
+# Editor folders
+.vscode/
+.idea/
+
+# Logs
+*.log
