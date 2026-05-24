@@ -4,6 +4,10 @@ Claude.md
 # macOS
 .DS_Store
 
+# Local backups
+.index.html.bak
+*.bak
+
 # Editor folders
 .vscode/
 .idea/
