@@ -52,12 +52,22 @@
       gap: 16px;
     }
     .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
       font-family: var(--font-display);
       font-size: 22px;
       font-weight: 300;
       letter-spacing: -0.4px;
       color: var(--ink);
       text-decoration: none;
+    }
+    .brand-mark {
+      width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      background: url("../logo.png") center / contain no-repeat;
+      flex-shrink: 0;
     }
     .brand em { font-style: italic; }
     .top-right {
@@ -135,7 +145,8 @@
 
     @media (max-width: 600px) {
       .topbar-inner { padding: 14px 20px; }
-      .brand { font-size: 18px; }
+      .brand { font-size: 18px; gap: 8px; }
+      .brand-mark { width: 22px; height: 22px; border-radius: 5px; }
       .back-link { font-size: 13px; }
       .top-right { gap: 14px; }
       main { padding: 40px 20px 64px; }
@@ -148,7 +159,10 @@
 <body>
   <header class="topbar">
     <div class="topbar-inner">
-      <a class="brand" href="../index.html">Soma <em>Studios</em></a>
+      <a class="brand" href="../index.html" aria-label="Soma Studios — accueil">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">Soma <em>Studios</em></span>
+      </a>
       <div class="top-right">
         <a class="lang-switch" href="../privacy.html" hreflang="en" aria-label="Switch to English">EN</a>
         <a class="back-link" href="../index.html">← Retour à l'accueil</a>
