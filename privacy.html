@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy — Soma Studios</title>
   <meta name="description" content="Soma Studios Privacy Policy — how your photos are handled when using our AI virtual try-on service.">
+  <link rel="alternate" hreflang="en" href="https://somastudios.fashion/privacy.html">
+  <link rel="alternate" hreflang="fr-CA" href="https://somastudios.fashion/fr/privacy.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -58,6 +60,22 @@
       text-decoration: none;
     }
     .brand em { font-style: italic; }
+    .top-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .lang-switch {
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--muted);
+      text-decoration: none;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      transition: color 150ms ease;
+    }
+    .lang-switch:hover { color: var(--ink); }
     .back-link {
       font-family: var(--font-body);
       font-size: 14px;
@@ -119,6 +137,7 @@
       .topbar-inner { padding: 14px 20px; }
       .brand { font-size: 18px; }
       .back-link { font-size: 13px; }
+      .top-right { gap: 14px; }
       main { padding: 40px 20px 64px; }
       h1 { font-size: 38px; letter-spacing: -0.7px; }
       h2 { font-size: 22px; margin-top: 32px; }
@@ -130,7 +149,10 @@
   <header class="topbar">
     <div class="topbar-inner">
       <a class="brand" href="index.html">Soma <em>Studios</em></a>
-      <a class="back-link" href="index.html">← Back to home</a>
+      <div class="top-right">
+        <a class="lang-switch" href="fr/privacy.html" hreflang="fr-CA" aria-label="Voir en français">FR</a>
+        <a class="back-link" href="index.html">← Back to home</a>
+      </div>
     </div>
   </header>
 
